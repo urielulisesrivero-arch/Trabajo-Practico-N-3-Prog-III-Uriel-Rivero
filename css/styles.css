@@ -133,3 +133,18 @@ th, td {
 th {
   background-color: #330000;
 }
+tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #330000;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #888888;
+  border-top: 1px solid #330000;
+  margin-top: 40px;
+}
