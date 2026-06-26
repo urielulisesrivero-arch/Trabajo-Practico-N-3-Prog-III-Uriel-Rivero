@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personas Nativo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main>
+    <a href="index.html" class="btn-rojo volver">Volver al inicio</a>
+    <section class="caja">
+      <h2>Registro de Pacientes (JS Nativo)</h2>
+      <form id="formPersonas">
+        <div class="campo">
+          <label>Nombre</label>
+          <input type="text" id="nom" placeholder="Ej: Lionel" required>
+        </div>
+        <div class="campo">
+          <label>Apellido</label>
+          <input type="text" id="ape" placeholder="Ej: Messi" required>
+        </div>
+        <div class="campo">
+          <label>Edad</label>
+          <input type="number" id="eda" placeholder="Ej: 36" required>
+        </div>
+        <div class="campo">
+          <label>Altura (m)</label>
+          <input type="number" step="0.01" id="alt" placeholder="Ej: 1.70" required>
+        </div>
+        <div class="campo">
+          <label>Peso (kg)</label>
+          <input type="number" step="0.1" id="pes" placeholder="Ej: 72.5" required>
+        </div>
+        <button type="submit" class="btn-rojo">Guardar</button>
+      </form>
+    </section>
+    <section class="caja">
+      <h2>Lista de Pacientes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Altura</th>
+            <th>Peso</th>
+            <th>IMC</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpoTabla"></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="js/personas.js"></script>
+</body>
+</html>
