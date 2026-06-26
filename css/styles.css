@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #ff0000;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 2px solid #ff0000;
+}
+
+h1, h2, h3 {
+  color: #ff3333;
+}
+
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.navegacion {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-rojo {
+  background-color: #aa0000;
+  color: #ffffff;
+  border: 1px solid #ff0000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-rojo:hover {
+  background-color: #ff0000;
+  color: #000000;
+}
+
+.volver {
+  margin-bottom: 20px;
+}
+
+.caja {
+  border: 1px solid #ff0000;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #111111;
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.grilla-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ff3333;
+  padding: 15px;
+  flex: 1 1 250px;
+  background-color: #0a0a0a;
+  transition: all 0.3s ease;
+}
+
+.card.destacado {
+  border: 2px solid #ffd700;
+  box-shadow: 0 0 15px #ffd700;
+  background-color: #221a00;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background-color: #000000;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  background-color: #220000;
+}
+
+::placeholder {
+  color: #666666;
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ff0000;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #330000;
+}
